@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  python:
+    build: ./weather-etl
+    volumes:
+      - ./data:/app/db
+
+  nodejs:
+    build: ./weather-be
+    volumes:
+      - ./data:/app/db
+    depends_on:
+      - python
+
+  react:
+    build: ./weather-fe
+    ports:
+      - "3000:3000"
+    depends_on:
+      - nodejs
+
+volumes:
+  db_data:

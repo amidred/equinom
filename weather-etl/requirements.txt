@@ -1,0 +1,5 @@
+# backend-python/requirements.txt
+requests
+datetime
+geonamescache
+schedule

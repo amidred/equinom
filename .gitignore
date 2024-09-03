@@ -1,0 +1,8 @@
+# for ETL project
+weather-etl/__pycache__/
+
+# for BE project
+weather-be/node_modules
+
+# for FE project
+weather-fe/node_modules
