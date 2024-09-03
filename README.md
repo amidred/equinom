@@ -1,6 +1,6 @@
 to run this project simply run:
 ```bash
-docker compose up
+docker-compose up
 ```
 You should run weather-be manually because SQLite3 does not work properly in Docker container
 run the following: 
